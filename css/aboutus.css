@@ -1,0 +1,197 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+header {
+    background-color: rgb(49, 49, 49);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-right: 20px;
+    color: white;
+}
+
+.name span {
+    color: greenyellow;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 200px;
+}
+
+nav ul li a:hover {
+    background-color: #9e9b9b;
+}
+
+.Search {
+    display: flex;
+    position:absolute;
+    left: auto;
+    right:110px;
+}
+
+.Search input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.Search button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.Search button:hover {
+    background-color: #7a7777;
+}
+
+
+main {
+    padding-top: 80px; 
+}
+
+.map01{
+    float: left;
+}
+.map02{
+    float: right;
+
+}
+
+.map03{
+    float: left;
+}
+
+.loca {
+    text-align: center;  
+}
+
+.location h2{
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  tfoot {
+    background-color: #666;
+    color: #fff;
+  }
+
+
+footer {
+    background-color: rgb(49, 49, 49);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .name {
+        margin-right: 0;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Search {
+        width: 100%;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .Search input[type="text"] {
+        width: calc(100% - 100px);
+        margin-right: 5px;
+    }
+
+    .Search button {
+        width: 80px;
+    }
+}
